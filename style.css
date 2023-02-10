@@ -1,0 +1,141 @@
+body {
+  margin: 0;
+}
+
+.wrapper {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+.menu {
+    margin: 0;
+    display: flex;
+    flex: 0,1;
+    justify-content: center;
+    align-items: center;
+    padding: 0.5em;
+
+    color: #747474;
+    font-size: 1.5em;
+
+    background-color: #f9f9f9;
+    border-top: solid #ae8b6e; 
+    border-bottom: solid #C5C6C7;
+    border-width: medium;
+    gap: 2em;
+}
+
+* {
+    font-family: Georgia, serif;
+}
+
+a {
+    color: inherit; 
+    text-decoration: none; 
+} 
+
+.active{
+    color: #ae8b6e; 
+}
+
+a:hover{
+  color: #ae8b6e; 
+}
+
+main {
+    display: flex;
+    flex: 1;
+    flex-direction: row;
+    background: #f2f2f2;
+}
+
+.leftcolumn {
+    margin-top: 1.5em;
+    margin-bottom: 1.5em; 
+    display: flex;
+    width: 30%;
+    flex-direction: column;
+    justify-content: top;
+    align-items: center;
+
+    border-right: solid #C5C6C7;
+
+}
+
+img {
+    width: 15em;
+    height: 17em;
+    border-radius: 50%;
+    overflow: hidden;
+    padding-bottom: 50px auto;
+  }
+
+.rightcolumn {
+    margin-bottom: 5em;
+    padding-left: 1.5em;
+    display: flex;
+    width: 70%;
+    flex-direction: column;
+    justify-content: space-around;
+
+}
+
+progress {
+    width: 500px;
+    height: 30px;
+}
+
+.heading {
+  font-weight: bold;
+  font-size: 1.2em;
+}
+
+h2, h3 {
+    font-weight: normal;
+    color: #484848;
+    margin-bottom: 0;
+    margin-top: 30px;
+}
+
+.external-link {
+  color: #ae8b6e;
+}
+
+li {
+  padding: 1.1em;
+}
+
+#skills {
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  font-weight: normal;
+  color: #484848;
+  padding-left: 10px;
+}
+
+footer {
+    margin: 0;
+    display: flex;
+    text-align: center;
+    justify-content:center;
+    border-top: solid #C5C6C7;
+    background: #f2f2f2;
+    flex: 0, 1;
+}
+
+@media screen and (max-width: 800px) {
+  main {
+    flex-direction: column;
+  }
+  .leftcolumn, .rightcolumn {   
+    width: 100%;
+    padding: 0;
+    align-items: center;
+  }
+  .rightcolumn {
+    border-top: solid #C5C6C7;
+  }
+}
